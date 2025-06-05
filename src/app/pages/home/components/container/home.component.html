@@ -1,0 +1,37 @@
+<div class="app-header relative z-[101]">
+    <header class="py-4 fixed top-0 w-full">
+        <div class="limited-container">
+            <div class="logo">
+                <app-logo />
+            </div>
+        </div>
+    </header>
+</div>
+<div class="app-container">
+    <div class="controllers fixed top-[50%] right-[10%] z-[2] -translate-[50%] flex flex-col gap-3">
+        <button class="up cursor-pointer">
+            <svg width="50" height="51" viewBox="0 0 50 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="50" y="51" width="50" height="51" rx="25" transform="rotate(-180 50 51)" fill="white" fill-opacity="0.15"/>
+                <path d="M33.75 21.75C33.75 19.4294 32.8281 17.2036 31.1871 15.5627C29.5462 13.9217 27.3206 13.0001 25 13.0001C22.6794 13.0001 20.4537 13.9217 18.8127 15.5627C17.1719 17.2036 16.25 19.4294 16.25 21.75L16.25 29.25C16.25 31.5707 17.1719 33.7962 18.8127 35.4371C20.4537 37.0781 22.6794 38 25 38C27.3206 38 29.5462 37.0781 31.1871 35.4371C32.8281 33.7962 33.75 31.5707 33.75 29.25V21.75Z" [attr.stroke]="'white'" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M25 33V23" [attr.stroke]="'white'" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M21.25 26.75L25 23L28.75 26.75" [attr.stroke]="'white'" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </button>
+        <button class="down cursor-pointer">
+            <svg width="50" height="51" viewBox="0 0 50 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="50" height="51" rx="25" fill="white" fill-opacity="0.15"/>
+                <path d="M16.25 29.25C16.25 31.5706 17.1719 33.7964 18.8129 35.4373C20.4538 37.0783 22.6794 37.9999 25 37.9999C27.3206 37.9999 29.5463 37.0783 31.1873 35.4373C32.8281 33.7964 33.75 31.5706 33.75 29.25V21.75C33.75 19.4293 32.8281 17.2038 31.1873 15.5629C29.5463 13.9219 27.3206 13 25 13C22.6794 13 20.4538 13.9219 18.8129 15.5629C17.1719 17.2038 16.25 19.4293 16.25 21.75V29.25Z" [attr.stroke]="'white'" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M25 18V28" [attr.stroke]="'white'" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M28.75 24.25L25 28L21.25 24.25" [attr.stroke]="'white'" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </button>
+    </div>
+    <div class="scroller-container h-[100vh] overflow-hidden">
+        <section class="hero h-[100vh]">
+            <app-hero />
+        </section>
+        <section class="services h-[100vh]">
+            <app-services />
+        </section>
+    </div>
+</div>
